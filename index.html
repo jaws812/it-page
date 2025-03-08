@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles\styles.css" />
+    <title>IT-комфорт</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container container--first-and-second">
+        <a href="index.html" class="header__logo logo">
+          <img
+            src="images\logo.svg"
+            alt="IT-комфорт"
+            class="logo__image"
+            width="200"
+            height="37"
+            loading="lazy"
+          />
+        </a>
+        <div class="header__contacts hidden-mobile">
+          <address class="header__contacts-body">
+            <ul class="header__contacts-body-list">
+              <li class="header__contacts-body-item">
+                <span class="span span--gray">ВРЕМЯ РАБОТЫ</span><br />
+                <a>Пн-Вс <time datetime="09:00-21:00">9:00-21:00</time></a>
+              </li>
+              <li class="header__contacts-body-item">
+                <span class="span span--gray">EMAIL</span><br />
+                <a href="mailto:info@it-komfort.ru"> info@it-komfort.ru</a>
+              </li>
+              <li class="header__contacts-body-item">
+                <span class="span span--gray">МЕССЕНДЖЕРЫ</span><br />
+                <a href="tel:+79128810296">+79128810296</a>
+              </li>
+              <li class="header__contacts-body-item">
+                <span class="span span--gray">ТЕЛЕФОН</span><br />
+                <a href="tel:+79128810296">+7(342)243-02-96 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onClick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">Open contacts menu</span>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="section container container--first-and-second">
+        <div class="section_body">
+          <div class="hero">
+            <div class="hero__inner">
+              <h1 class="hero__title">Поможем навести порядок в компании</h1>
+              <div class="hero__description">
+                <p>
+                  Внедрение CRM за 2 недели.<br />
+                  Работаем по всей России.
+                </p>
+              </div>
+              <form class="hero__form">
+                <div class="hero__field field">
+                  <input
+                    type="text"
+                    class="field__input"
+                    name="name"
+                    placeholder="Название компании"
+                  />
+                </div>
+                <div class="hero__field field">
+                  <input
+                    type="text"
+                    class="field__input"
+                    name="telephone"
+                    placeholder="Телефон*"
+                  />
+                </div>
+              </form>
+              <button class="hero__button button" type="button">
+                ЗАКАЗАТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+              </button>
+              <div class="hero__description-oferta">
+                <p>Мы никогда не передаём Ваши данные третьим лицам</p>
+              </div>
+            </div>
+            <img
+              class="hero__image"
+              src="images\hero-image.svg"
+              alt=""
+              width="496"
+              height="317"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section_body">
+          <div class="text">
+            <div class="text__description">
+              <p>
+                Внедрение CRM позволит Вашей компании<br />
+                <span class="blue">связываться</span> с клиентом вовремя,<br />
+                <span class="green">сохранять</span> всю информацию о заказах,
+                <span class="yellow">анализировать</span>
+                показатели продаж.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="messenger">
+            <div class="messenger__inner">
+              <h2 class="messenger__title">
+                Объединение всех каналов связи в одной системе
+              </h2>
+              <div class="messenger__description">
+                <p>
+                  Подключите мессенджеры, соцсети, Авито, сайты, чаты, и
+                  общайтесь с клиентами в режиме одного окна.
+                </p>
+              </div>
+              <img
+                src="images/crm.svg"
+                alt="CRM"
+                class="messenger__image"
+                width="350"
+                height="350"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="data">
+            <div class="data__inner">
+              <h2 class="data__title">
+                Сотрудник уходит,<br />
+                данные остаются
+              </h2>
+              <div class="data__description">
+                <p>Вся информация о клиенте и его заказах сохраняется в CRM</p>
+              </div>
+              <img
+                src="images/data.svg"
+                alt="CRM"
+                class="data__image"
+                width="700"
+                height="371"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="report">
+            <div class="report__inner">
+              <h2 class="report__title">Принимайте решения на основе данных</h2>
+              <div class="report__description">
+                <p>Отчёты по продажам, по менеджерам, по клиентам.</p>
+              </div>
+              <img
+                src="images/report.svg"
+                alt="CRM"
+                class="report__image"
+                width="835"
+                height="443"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="reviews">
+            <div class="reviews__inner">
+              <h2 class="reviews__title">Отзывы</h2>
+              <div class="reviews__description">
+                <p>
+                  Более 15 000 000 компаний по всему миру уже используют
+                  CRM-системы.
+                </p>
+              </div>
+              <div class="reviews__container">
+                <ul class="reviews__container-list">
+                  <li class="reviews__container-item">
+                    <article class="reviews-card">
+                      <header class="reviews-card__header">
+                        <img
+                          src="images/1.svg"
+                          alt="Аватар"
+                          class="reviews-card__image"
+                          width="48"
+                          height="48"
+                          loading="lazy"
+                        />
+                        <div class="reviews-card__info">
+                          <span class="span--normal">Михаил Кириченко </span>
+                          <span class="span--bold">Just look</span>
+                        </div>
+                      </header>
+                      <div class="reviews-card__body">
+                        <p>
+                          “Отдел продаж начал отмечать в CRM все действия и
+                          результаты работы с клиентами – звонки, письма,
+                          встречи и их итоги, ход сделок, их завершение,
+                          выставление счетов – мы, наконец-то, начали учитывать
+                          все.”
+                        </p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="reviews__container-item">
+                    <article class="reviews-card">
+                      <header class="reviews-card__header">
+                        <img
+                          src="images/2.svg"
+                          alt="Аватар"
+                          class="reviews-card__image"
+                          width="48"
+                          height="48"
+                          loading="lazy"
+                        />
+                        <div class="reviews-card__info">
+                          <span class="span--normal">Алексей Гранин </span>
+                          <span class="span--bold">Datakit</span>
+                        </div>
+                      </header>
+                      <div class="reviews-card__body">
+                        <p>
+                          “Мы отслеживаем как результаты работы каждого
+                          менеджера, анализируя воронку продаж, так и
+                          продуктивность технических специалистов с помощью
+                          отчетов по задачам.”
+                        </p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="reviews__container-item">
+                    <article class="reviews-card">
+                      <header class="reviews-card__header">
+                        <img
+                          src="images/3.svg"
+                          alt="Аватар"
+                          class="reviews-card__image"
+                          width="48"
+                          height="48"
+                          loading="lazy"
+                        />
+                        <div class="reviews-card__info">
+                          <span class="span--normal">Екатерина Мясникова </span>
+                          <span class="span--bold">МеталлСтройГрупп</span>
+                        </div>
+                      </header>
+                      <div class="reviews-card__body">
+                        <p>
+                          Когда менеджеры работают в своих файлах на домашних
+                          компьютерах, нет прозрачности для руководителя. Я не
+                          понимала, как работают с клиентами, не забывают ли о
+                          них.”
+                        </p>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="question">
+            <div class="question__inner">
+              <h2 class="question__title">Частые вопросы</h2>
+              <div class="roster">
+                <ul class="roster__list">
+                  <li class="roster__item">
+                    <details class="roster__accordion">
+                      <summary class="roster__accordion-header">
+                        <h3 class="roster__accordion-title">
+                          Сколько это стоит?
+                        </h3>
+                        <span class="roster__accordion-indicator"></span>
+                      </summary>
+                      <div class="roster__accordion-body"><p></p></div>
+                    </details>
+                  </li>
+                  <li class="roster__item">
+                    <details class="roster__accordion">
+                      <summary class="roster__accordion-header">
+                        <h3 class="roster__accordion-title">
+                          Можно ли подключить 1С?
+                        </h3>
+                        <span class="roster__accordion-indicator"></span>
+                      </summary>
+                      <div class="roster__accordion-body"></div>
+                    </details>
+                  </li>
+                  <li class="roster__item">
+                    <details class="roster__accordion">
+                      <summary class="roster__accordion-header">
+                        <h3 class="roster__accordion-title">
+                          А если сотрудники начнут сопротивляться новой системе?
+                        </h3>
+                        <span class="roster__accordion-indicator"></span>
+                      </summary>
+                      <div class="roster__accordion-body"></div>
+                    </details>
+                  </li>
+                  <li class="roster__item">
+                    <details class="roster__accordion">
+                      <summary class="roster__accordion-header">
+                        <h3 class="roster__accordion-title">
+                          Какая CRM лучше?
+                        </h3>
+                        <span class="roster__accordion-indicator"></span>
+                      </summary>
+                      <div class="roster__accordion-body"></div>
+                    </details>
+                  </li>
+                  <li class="roster__item">
+                    <details class="roster__accordion">
+                      <summary class="roster__accordion-header">
+                        <h3 class="roster__accordion-title">
+                          Смогут ли менеджеры скачать базу?
+                        </h3>
+                        <span class="roster__accordion-indicator"></span>
+                      </summary>
+                      <div class="roster__accordion-body"></div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="order">
+            <div class="order__inner">
+              <h2 class="order__title">Заказать настройку CRM</h2>
+              <div class="order__description">
+                <p>
+                  Оставьте заявку,<br />
+                  и мы перезвоним Вам в течение 10 минут.
+                </p>
+              </div>
+              <form class="hero__form order__form">
+                <div class="hero__field order__field field">
+                  <input
+                    type="text"
+                    class="field__input"
+                    name="name"
+                    placeholder="Название компании"
+                  />
+                </div>
+                <div class="hero__field order__field field">
+                  <input
+                    type="text"
+                    class="field__input"
+                    name="telephone"
+                    placeholder="Телефон*"
+                  />
+                </div>
+              </form>
+              <button class="hero__button order__button button" type="button">
+                ЗАКАЗАТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+              </button>
+              <div class="hero__description-oferta">
+                <p>Мы никогда не передаём Ваши данные третьим лицам</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer container">
+        <div class="footer__descrtiption">
+          <p>
+            © <time datetime="2015-2024">2015-2024</time> ООО “ИТ-Комфорт” ИНН:
+            5906133680 ОГРН: 1155958105962
+          </p>
+        </div>
+      </footer>
+    </main>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close contacts menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <address class="mobile-overlay__contacts">
+          <p>
+            ВРЕМЯ РАБОТЫ<br />
+            <a>Пн-Вс <time datetime="09:00-21:00">9:00-21:00</time></a>
+          </p>
+          <p>
+            EMAIL<br />
+            <a href="mailto:info@it-komfort.ru"> info@it-komfort.ru</a>
+          </p>
+          <p>
+            МЕССЕНДЖЕРЫ<br />
+            <a href="tel:+79128810296">+79128810296</a>
+          </p>
+          <p>
+            ТЕЛЕФОН<br />
+            <a href="tel:+79128810296">+7(342)243-02-96 </a>
+          </p>
+        </address>
+      </div>
+    </dialog>
+  </body>
+</html>
